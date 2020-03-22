@@ -1,0 +1,413 @@
+body::-webkit-scrollbar {
+    width: 7px;
+    background: rgba(255, 213, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(116, 105, 105);
+    border-radius: 5px;
+}
+
+.navbar {
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.header {
+    background: url(fondo.jpg);
+    background-size: cover;
+    height: auto;
+    min-height: 100vh;
+}
+
+.header .navbar {
+    background-color: transparent !important;
+}
+
+.titulo-proyect {
+    color: white;
+    font-size: 90px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.info-proyect {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 220px;
+    text-align: center;
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.seccion-recopilacion {
+    background-color: white;
+    height: auto;
+    min-height: 100vh;
+}
+
+.seccion-resultados {
+    background: url(fondo.jpg);
+    height: auto;
+    min-height: 100vh;
+}
+
+.seccion-conclusiones {
+    background-color: white;
+    height: auto;
+    min-height: 100vh;
+}
+
+.btn-more {
+    background: none;
+    border: none;
+    color: green;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.txt-result {
+    color: white;
+    margin-top: 70px;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.foot {
+    min-height: 15px;
+    height: auto;
+    background-color: #343a40;
+    color: white;
+}
+
+@media screen and (min-width: 425px) {
+    /*TABLET, PC*/
+    .text-result {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    #button {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.555);
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50px;
+        margin: 30px;
+        position: fixed;
+        bottom: 30px;
+        right: 5px;
+        transition: background-color .3s;
+        z-index: 1000;
+    }
+    #button.show {
+        display: inline-block;
+    }
+    #button:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.152);
+        border-radius: 50px;
+    }
+    #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+    }
+    .titulo-proyect {
+        margin-top: 180px;
+        text-align: center;
+        font-size: 90px;
+        font-family: 'Fjalla One', sans-serif;
+        color: white;
+    }
+    .info-proyect {
+        margin-top: 300px;
+        margin-right: 30px;
+        margin-left: 30px;
+        font-size: 20px;
+        font-family: 'Quicksand', sans-serif;
+        justify-content: center;
+        color: white;
+    }
+    .button {
+        margin-top: 30px;
+    }
+    .carousel {
+        width: 700px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .logo {
+        height: 50px;
+        width: 50px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+    .title-recop {
+        padding-top: 180px;
+        font-size: 50px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+    }
+    .info-recop {
+        font-size: 20px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        margin: auto;
+        display: block;
+        margin-top: 70px;
+    }
+    .img-concluciones {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        display: block;
+        margin-top: 80px;
+    }
+    .title-conc {
+        padding-top: 130px;
+        font-size: 40px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+    }
+    .text-conc {
+        font-size: 15px;
+        text-align: center;
+    }
+    .foot {
+        height: 15vh;
+        background-color: #343a40;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+    .title-foot {
+        padding-top: 20px;
+        color: white;
+    }
+    .btn-foot {
+        text-decoration: none;
+        background: none;
+        border: none;
+        color: white;
+    }
+    .btn-foot:hover {
+        color: turquoise;
+    }
+    .redes {
+        text-decoration: none;
+        height: 30px;
+        width: 30px;
+        margin-top: -5px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /*CELULAR*/
+    .text-result {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    .txt-result {
+        color: white;
+        margin-top: 70px;
+        font-size: 40px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+    }
+    h5 {
+        color: black;
+    }
+    p {
+        color: black;
+    }
+    .titulo-proyect {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 60px;
+        font-family: 'Fjalla One', sans-serif;
+        color: white;
+    }
+    .info-proyect {
+        margin-top: 210px;
+        margin-right: 30px;
+        margin-left: 30px;
+        font-size: 20px;
+        font-family: 'Quicksand', sans-serif;
+        justify-content: center;
+        color: white;
+    }
+    .carousel {
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+    .logo {
+        height: 50px;
+        width: 50px;
+        margin-right: 8px;
+        margin-left: -5px
+    }
+    .title-recop {
+        padding-top: 100px;
+        font-size: 32px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+    }
+    .info-recop {
+        font-size: 20px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin: auto;
+        display: block;
+    }
+    .img-concluciones {
+        height: 30px;
+        width: 30px;
+        margin: auto;
+        display: block;
+        margin-top: 8px;
+    }
+    .title-conc {
+        padding-top: 20px;
+        font-size: 30px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+    }
+    .text-conc {
+        font-size: 15px;
+        text-align: center;
+    }
+    .foot {
+        height: 15vh;
+        background-color: #343a40;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+    .title-foot {
+        padding-top: 15px;
+        color: white;
+    }
+    .btn-foot {
+        text-decoration: none;
+        background: none;
+        border: none;
+        color: white;
+    }
+    .btn-foot:hover {
+        color: turquoise;
+    }
+    .tit {
+        color: #fffbf1;
+        text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e317c;
+        font-size: 80px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: -3px;
+        margin: 0;
+        position: absolute;
+        margin-top: 50px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .redes {
+        height: 30px;
+        width: 30px;
+        margin-top: -5px;
+        margin-left: 10px;
+    }
+}
+
+/* Rectángulo rotador titulo*/
+
+@keyframes tipsy {
+    0% {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(180deg);
+    }
+}
+
+.tit {
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e317c;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 200px;
+    margin-top: -40px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.tit:before, .tit:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 10px solid;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 8s infinite alternate ease-in-out tipsy;
+}
+
+.tit:before {
+    border-color: orange #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.tit:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) orange #d9524a;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.507);
+}
